@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { NextUIProvider } from '@nextui-org/react';
 import { Box } from '@/components/Box';
 import Navbar from '@/components/NavbarComponent';
+import { Database } from '@/types/supabase';
 
 // Providers (providing Supabase to our application, nextui providers)
 
@@ -13,7 +14,7 @@ import Navbar from '@/components/NavbarComponent';
 // Box (container for the content)
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [supabaseClient] = useState(() => createBrowserSupabaseClient());
+  const [supabaseClient] = useState(() => createBrowserSupabaseClient<Database>());
   
   return (
     <SessionContextProvider 
