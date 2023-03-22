@@ -62,7 +62,7 @@ import { Database } from '@/types/supabase';
         if (typeof id !== "undefined") {
             getArticle();
         }
-   }, [id]); // odpala sie gdy id sie zmienia
+   }, [id, supabaseClient]); // odpala sie gdy id sie zmienia
 
 
     const editArticle = async () => {

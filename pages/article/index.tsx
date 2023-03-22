@@ -34,7 +34,7 @@ const Article: NextPage = () => {
         if (typeof id !== "undefined") {
             getArticle();
         }
-   }, [id]); // odpala sie gdy id sie zmienia
+   }, [id, supabaseClient]); // odpala sie gdy id sie zmienia
 
  const deleteArticle = async () => {
     try {
