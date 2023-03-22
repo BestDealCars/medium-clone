@@ -53,9 +53,11 @@ const MainFeed: NextPage = () => {
        <Text size="$lg" css={{my: "$8"}}>
             Check out articles from users here
        </Text>
+       <>
        { articles.map((article) =>         
             <ArticleCard article={article}/>
        )}
+       </>
        </>
    )    
 }
