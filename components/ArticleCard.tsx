@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { Text, Card } from "@nextui-org/react";
 
 interface Props {
+    key: number,
     article: any
 }
 
