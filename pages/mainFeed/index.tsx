@@ -20,7 +20,7 @@ const MainFeed: NextPage = () => {
 
     useEffect(() => {
         getArticles();
-    }, []);
+    });
 
     const getArticles = async () => {
         try {
