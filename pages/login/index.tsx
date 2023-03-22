@@ -17,6 +17,8 @@
         <Auth
             appearance={{theme: ThemeSupa}}
             supabaseClient={supabaseClient}
+            //theme="dark"
+            providers={[]}
         />
     )    
  }
